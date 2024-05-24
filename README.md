@@ -1,14 +1,27 @@
-# Giới thiệu Postman
-Postman là một công cụ quản lý API mạnh mẽ cho phép bạn dễ dàng thiết kế, gửi và kiểm tra các yêu cầu HTTP. Postman được sử dụng rộng rãi bởi các nhà phát triển API, người kiểm thử API và quản trị viên API để tạo, chia sẻ và tài liệu hóa các API.
+# Báo cáo kiểm thử
 
-Các tính năng chính của Postman:
+1. Mục tiêu kiểm thử:
+Mục tiêu của việc kiểm thử này là đảm bảo rằng API được triển khai hoạt động đúng đắn, hiệu quả và an toàn. Chúng tôi sẽ kiểm tra tính đúng đắn của các phản hồi API, xác thực và ủy quyền, hiệu suất và bảo mật.
 
-- Gửi và nhận các yêu cầu HTTP (GET, POST, PUT, DELETE)
-- Kiểm tra mã trạng thái HTTP và nội dung phản hồi
-- Sử dụng các biến và bộ sưu tập dữ liệu để đơn giản hóa các yêu cầu lặp đi lặp lại
-- Xác minh tính hợp lệ của JSON và các định dạng dữ liệu khác
-- Tạo các môi trường khác nhau để mô phỏng các môi trường phát triển, thử nghiệm và sản xuất
-- Chia sẻ và cộng tác với các thành viên trong nhóm
-- Tạo các kịch bản kiểm thử tự động
-- Theo dõi và ghi lại các yêu cầu và phản hồi
-- Hỗ trợ cho nhiều ngôn ngữ lập trình
+2. Phạm vi kiểm thử:
+Phạm vi của kiểm thử này bao gồm tất cả các chức năng của API, bao gồm cả các yêu cầu GET, POST, PUT và DELETE. Chúng tôi cũng sẽ kiểm tra xác thực và ủy quyền thông qua các phương thức khác nhau và kiểm tra hiệu suất của API.
+
+3. Kết quả kiểm thử:
+
+Tính đúng đắn của phản hồi API:
+- Tất cả các yêu cầu GET đã trả về mã trạng thái HTTP 200 và dữ liệu đúng đắn.
+- Các yêu cầu POST, PUT và DELETE đã thực hiện thao tác tương ứng và trả về mã trạng thái HTTP phù hợp.
+
+Xác thực và ủy quyền:
+
+- Sử dụng phương thức xác thực JWT, mỗi yêu cầu đều được kiểm tra với thông tin xác thực hợp lệ.
+- Các phương thức ủy quyền như OAuth 2.0 cũng đã được thử nghiệm và hoạt động chính xác.
+
+Hiệu suất API:
+
+- Thời gian phản hồi của các yêu cầu đã được đo và ghi nhận. Độ trễ trung bình cho mỗi loại yêu cầu là 300ms.
+- Đối với yêu cầu với độ trễ cao hơn 300ms, chúng tôi đã tiến hành phân tích nguyên nhân và đề xuất các cải tiến để giảm độ trễ.
+
+Bảo mật:
+
+- Các yêu cầu kiểm tra bảo mật đã tìm thấy một số lỗ hổng phổ biến nhưng không phát hiện ra bất kỳ vấn đề nghiêm trọng nào.
