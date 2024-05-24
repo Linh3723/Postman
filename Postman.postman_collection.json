@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "c7eab873-adbb-4212-a8d1-51fe611c8582",
+		"name": "Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "35159181",
+		"_collection_link": "https://www.postman.com/linh3723/workspace/my-workspace/collection/35159181-c7eab873-adbb-4212-a8d1-51fe611c8582?action=share&source=collection_link&creator=35159181"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 400ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);\r",
+							"});\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Image",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": "https://random-data-api.com/api/v2/beers"
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "https://random-data-api.com/api/v2/beers"
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "https://random-data-api.com/api/v2/beers"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://random-data-api.com/api/v2/beers"
+			},
+			"response": []
+		}
+	]
+}
